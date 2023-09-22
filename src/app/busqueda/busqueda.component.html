@@ -1,0 +1,40 @@
+<div class="container">
+    <form [formGroup]="busqueda" (ngSubmit)="busquedaData(busqueda)" class="form-box">
+        <h3>Ingreso de Informaci&oacute;n al Buscador</h3>
+        <br/>
+        <div class="form-group">
+            <label>Tipo de Documento</label>
+            <select formControlName="documentType" class="form-select mb-3 mt-3">
+                <option *ngFor="let documento of documentos" value="cedula">
+                {{ documento.key }}
+                </option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>N&uacute;mero de Documento</label>
+            <input
+                type="text"
+                pattern="\d*"
+                maxlength="14"
+                formControlName="documentNumber"
+                class="form-control mb-3 mt-3"
+                placeholder=""
+                currencyMask
+                [options]="{ align: 'left',
+                    allowNegative: false,
+                    prefix: '',
+                    thousands: '.',
+                    decimal: '',
+                    precision: 0
+                }"/>
+        </div>
+
+        <div class="form-group">
+            <label>Pa&iacute;s del Documento</label>
+            <select type="text" formControlName="country" class="form-select mb-3 mt-3" placeholder="Pa&iacute;s del Documento"></select>
+        </div>
+
+        <button type="submit" class="form-control btn btn-primary mb-3 mt-3">Buscador</button>
+    </form>
+</div>
