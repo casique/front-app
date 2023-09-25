@@ -2,11 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
-The project has two components: the data search ("/busqueda") and the data dashboard ("/resumen"). The DataBase is located in the Json file ("/src/assets/db.json").
+The project has two components: the data search ("/busqueda") and the data dashboard ("/resumen"). The DataBase is located in the Json file ("/src/assets/db.json"). With this file is possible to create more test cases for more people in the database. The list of countries is consumed from the link `https://restcountries.com/v3.1/all`. This list is consumed by the service ("/src/app/services/lista.services.ts"). After filtering and setting the list in an array, it is sorted alphabetically to have a list perfectly ordered to find the country easily. 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve -o` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
