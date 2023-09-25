@@ -1,0 +1,68 @@
+{
+  "search": [
+    {
+      "id": 1,
+      "documentNumber": 1127608721,
+      "documentType": "cedula",
+      "firstName": "Gabriel",
+      "lastName": "Casique",
+      "country": "Colombia"
+    },
+    {
+      "id": 2,
+      "documentNumber": 22458756,
+      "documentType": "pasaporte",
+      "firstName": "Luis",
+      "lastName": "Pérez",
+      "country": "Colombia"
+    },
+    {
+      "id": 3,
+      "documentNumber": 28192339,
+      "documentType": "cedula",
+      "firstName": "Patricia",
+      "lastName": "Méndez",
+      "country": "Colombia"
+    },
+    {
+      "id": 4,
+      "documentNumber": 54231679,
+      "documentType": "pasaporte",
+      "firstName": "Rodrigo",
+      "lastName": "López",
+      "country": "Ecuador"
+    },
+    {
+      "id": 5,
+      "documentNumber": 1028564751,
+      "documentType": "cedula",
+      "firstName": "Carlos",
+      "lastName": "Rodríguez",
+      "country": "Colombia"
+    },
+    {
+      "id": 6,
+      "documentNumber": 54621384,
+      "documentType": "pasaporte",
+      "firstName": "Laura",
+      "lastName": "León",
+      "country": "España"
+    },
+    {
+      "id": 7,
+      "documentNumber": 25131245,
+      "documentType": "cedula",
+      "firstName": "Cecilia",
+      "lastName": "Carvajal",
+      "country": "Colombia"
+    },
+    {
+      "id": 8,
+      "documentNumber": 14253685,
+      "documentType": "pasaporte",
+      "firstName": "Raúl",
+      "lastName": "Torres",
+      "country": "Ecuador"
+    }
+  ]
+}

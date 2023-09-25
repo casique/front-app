@@ -1,12 +1,13 @@
-<div class="container">
+<div class="content" role="main">
     <form [formGroup]="busqueda" (ngSubmit)="busquedaData(busqueda)" class="form-box">
         <h3>Ingreso de Informaci&oacute;n al Buscador</h3>
         <br/>
         <div class="form-group">
             <label>Tipo de Documento</label>
             <select formControlName="documentType" class="form-select mb-3 mt-3">
-                <option *ngFor="let documento of documentos" value="cedula">
-                {{ documento.key }}
+                <option value="">Seleccionar Documento</option>
+                <option *ngFor="let documento of documentos">
+                    {{ documento.key }}
                 </option>
             </select>
         </div>
@@ -32,9 +33,16 @@
 
         <div class="form-group">
             <label>Pa&iacute;s del Documento</label>
-            <select type="text" formControlName="country" class="form-select mb-3 mt-3" placeholder="Pa&iacute;s del Documento"></select>
+            <select type="text" formControlName="country" class="form-select mb-3 mt-3">
+                <option value="">Seleccionar Pa&iacute;s</option>
+                <option *ngFor="let pais of paises">
+                    {{ pais }}
+                </option>
+            </select>
         </div>
 
-        <button type="submit" class="form-control btn btn-primary mb-3 mt-3">Buscador</button>
+        <button type="submit" class="form-control btn btn-primary mb-3 mt-3" [disabled]="!(tipoDocumento && numeroDocumento && nombrePais)">Buscador</button>
     </form>
 </div>
+
+<router-outlet></router-outlet>

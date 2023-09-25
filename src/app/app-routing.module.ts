@@ -7,9 +7,9 @@ import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.componen
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 const routes: Routes = [
-  {redirectTo: "", path: "busqueda", pathMatch: "full"},
+  {redirectTo: "/busqueda", path: "", pathMatch: "full"},
   {path: "busqueda", component:BusquedaComponent},
-  {path: "resumen", component:ResumenComponent},
+  {path: "resumen/:id", component:ResumenComponent},
   {path: "jumbotron", component: JumbotronComponent},
   {path: "bootstrap-form", component: BootstrapFormComponent},
   {path: "bootstrap-table", component: BootstrapTableComponent}
